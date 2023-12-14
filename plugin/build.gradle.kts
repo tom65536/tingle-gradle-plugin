@@ -1,6 +1,7 @@
 
 plugins {
     `java-gradle-plugin`
+    `java-library-convention`
 }
 
 repositories {
@@ -20,7 +21,7 @@ testing {
 
             targets {
                 all {
-                    testTask.configure { shouldRunAfter(test) } 
+                    testTask.configure { shouldRunAfter(test) }
                 }
             }
         }
